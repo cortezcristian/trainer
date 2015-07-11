@@ -3,6 +3,8 @@ global.$ = $;
 var abar = require('address_bar');
 var folder_view = require('folder_view');
 var nwGui = require('nw.gui');
+var gui = require('nw.gui');
+var win = gui.Window.get();
 
 // append default actions to menu for OSX
 var initMenu = function () {
@@ -58,7 +60,7 @@ var App = {
 };
 
 $(document).ready(function() {
-  initMenu();
+  //initMenu();
 
   var folder = new folder_view.Folder($('#files'));
   var addressbar = new abar.AddressBar($('#addressbar'));
@@ -85,5 +87,26 @@ $(document).ready(function() {
   $('[nw-path]').bind('click', function (event) {
     event.preventDefault();
     App.cd(this);
+  });
+
+
+  ///
+  $('.close-nw-app').click(function(){
+    console.log("closing...")
+    gui.App.quit();
+  });
+
+  $('.maximize-nw-app').click(function(){
+    win.show();
+    win.maximize();
+    $('.maximize-nw-app').hide();
+    $('.restore-nw-app').show();
+  });
+
+  $('.restore-nw-app').click(function(){
+    win.show();
+    win.restore();
+    $('.restore-nw-app').hide();
+    $('.maximize-nw-app').show();
   });
 });

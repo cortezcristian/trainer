@@ -1,0 +1,27 @@
+{
+  "name": "tainer",
+  "version": "0.0.0",
+  "homepage": "https://github.com/cortezcristian/trainer",
+  "authors": [
+    "Cristian Cortez <cortez.cristian@gmail.com>"
+  ],
+  "description": "Join the e-learning revolution",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "trainer"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "bootstrap": "~3.3.5"
+  }
+}

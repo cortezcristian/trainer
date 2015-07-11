@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>File Explorer</title>
+<title>Trainer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
 <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet">
+ -->
 <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
 <script type="text/javascript" src="main.js"></script>
+<link href="./components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="./components/fontawesome/css/font-awesome.css" rel="stylesheet">
+<link href="./css/styles.css" rel="stylesheet">
 </head>
-<body>
-<div style="position: absolute; left: 10px; right: 10px; top: 10px; bottom: 10px;">
-  <div class="well" style="float: left; width: 160px; padding: 8px;">
+<body class="ui-layout-container container-fluid">
+  <div class="">
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+      <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-target=
+          "#bs-example-navbar-collapse-1" data-toggle="collapse"
+          type="button"><span class="sr-only">Toggle
+          navigation</span><span class="icon-bar"></span><span class=
+          "icon-bar"></span><span class=
+          "icon-bar"></span></button><a class=
+          "navbar-brand hammerfont" href="#"><i class=
+          "fa fa-cloud fa-3" style=
+          "padding:0 3px;"></i>Trainer</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" style="padding-right:20px">
+            <li>
+                <a href="#" class="maximize-nw-app">
+                  <i class="fa fa-arrows-alt"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="restore-nw-app hide">
+                  <i class="fa fa-expand"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="close-nw-app">
+                  <i class="fa fa-power-off"></i>
+                </a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+<div class="row">
+  <div class="well" style="float: left; width: 160px; padding: 8px; margin-top: 20px;">
     <ul class="nav nav-list" id="sidebar">
       <li class="nav-header">Favorites</li>
       <li class="active">
@@ -34,11 +74,11 @@
     </ul>
   </div>
 
-  <div style="float: left; position: absolute; left: 210px; right: 0; top: 0; bottom: 50px">
-    <div class="row">
+  <div style="float: left; position: absolute; left: 210px; right: 0; top: 60px; bottom: 50px;   overflow: hidden;">
+    <div class="x">
       <ul id="addressbar" class="breadcrumb"></ul>
     </div>
-    <div class="row" style="background: #FFF; -webkit-border-radius: 2px; margin: -5px 1px 0 -19px; height: 100%; overflow: auto">
+    <div class="x" style="background: #FFF; -webkit-border-radius: 2px; margin: -5px 1px 0 -19px; height: 100%; overflow: auto">
       <ul style="margin: 5px;" id="files"></ul>
     </div>
   </div>

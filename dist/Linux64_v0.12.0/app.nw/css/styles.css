@@ -1,0 +1,13 @@
+body nav {
+  background: #F9F9F9;
+}
+body nav,
+body nav * {
+  -webkit-app-region: drag;
+}
+body button,
+body input,
+body i,
+body a {
+  -webkit-app-region: no-drag !important;
+}
