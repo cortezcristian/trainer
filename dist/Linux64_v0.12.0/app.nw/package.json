@@ -1,0 +1,18 @@
+{
+  "name": "Trainer",
+  "description": "Join the e-learning revolution",
+  "version": "0.1",
+  "main": "index.html",
+  "chromium-args": "--disable-web-security",
+  "webkit": {
+    "plugin": true
+  },
+  "window": {
+    "icon": "./img/logo.png",
+    "position": "center",
+    "toolbar": false,
+    "frame": false,
+    "width": 1200,
+    "height": 700
+  }
+}
